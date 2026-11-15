@@ -4,6 +4,7 @@
  */
 
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Navbar } from './components/Navbar.tsx';
 import { Hero } from './components/Hero.tsx';
 import { About } from './components/About.tsx';
@@ -58,6 +59,9 @@ export default function App() {
 
       {/* HasDevs AI Virtual Assistant Widget */}
       <ChatbotWidget />
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
